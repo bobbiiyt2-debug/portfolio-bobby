@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bobby Portfolio | Ethereal</title>
+    <link rel="stylesheet" href="css/style.css?v=15" />
+</head>
+<body>
+
+    <header class="glass-navbar">
+        <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-img" style="width: 22px; height: 22px; object-fit: contain;">
+            <a href="#home" style="text-decoration: none; color: inherit; cursor: pointer;">BOBBY.</a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#home" class="active">HOME<span class="active-dot">✦</span></a>
+            </li>
+            <li><a href="#about">ABOUT<span class="active-dot">✦</span></a></li>
+            <li><a href="#education">EDUCATION<span class="active-dot">✦</span></a></li>
+            <li><a href="#qualities">QUALITIES<span class="active-dot">✦</span></a></li>
+            <li><a href="#projects">PROJECTS<span class="active-dot">✦</span></a></li>
+            <li><a href="#gallery">GALLERY<span class="active-dot">✦</span></a></li>
+            <li><a href="#contact">CONTACT<span class="active-dot">✦</span></a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="nav-icon-btn" id="theme-toggle" title="Toggle Theme" style="cursor: pointer;"><i class="fas fa-moon"></i></div>
+            <div class="nav-icon-btn" id="music-toggle" title="Toggle Music" style="cursor: pointer; color: #ff4d4d;"><i class="fas fa-volume-mute"></i></div>
+        </div>
+    </header>
+
+    <div class="social-sidebar">
+        <a href="https://www.instagram.com/bobbyxart?igsh=MTBycWlpbGU4ZXl0bw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@bobbymakesart?_r=1&_t=ZS-97OVBAHTBFV" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:bobbiiyt.2@gmail.com"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <main class="main-container">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="view-section active">
+            <!-- Top Left Intro -->
+            <div class="glass-panel intro-panel" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+                <div class="intro-content" style="flex: 1;">
+                    <span class="sparkle">✦ Welcome to my world ✦</span>
+                    <h1 class="intro-title">Dream. Create.<br><span>Inspire.</span> ✦</h1>
+                    <p class="intro-text" style="max-width: 100%;">
+                        I'm BOBBY, a Computer Science student at UTeM with a strong passion for graphic design, illustration, and multimedia video editing.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn-primary">Explore My Work &rarr;</a>
+                        <div class="btn-play">
+                            <i><i class="fas fa-play" style="font-size: 12px; margin-left: 2px;"></i></i>
+                            Watch Intro
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image-wrapper" style="flex-shrink: 0; position: relative;">
+                    <img src="assets/images/profile.jpg" alt="Hero Image Placeholder" style="width: 350px; height: 350px; object-fit: cover; border-radius: 20px; border: 1px solid var(--glass-border-bright); box-shadow: 0 15px 50px rgba(0,0,0,0.4);">
+                    <div style="position: absolute; bottom: -15px; left: -15px; background: var(--accent); padding: 10px 20px; border-radius: 30px; font-size: 12px; color: #000; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        ✦ Designer/Animator
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Horizontal Row -->
+            <div class="glass-panel skills-row" style="margin-top: 20px;">
+                <div class="skill-col">
+                    <div class="skill-icon"><i class="fas fa-film"></i></div>
+                    <div class="skill-info">
+                        <h4>CapCut</h4>
+                        <p>Video editing and dynamic multimedia content creation.</p>
+                        <span style="font-size: 11px; color: var(--accent); font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">✦ Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-col">
+                    <div class="skill-icon"><i class="fas fa-sliders-h"></i></div>
+                    <div class="skill-info">
+                        <h4>DaVinci Resolve</h4>
+                        <p>Color grading, complex video editing, and post-production.</p>
+                        <span style="font-size: 11px; color: var(--accent); font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">✦ Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-col">
+                    <div class="skill-icon"><i class="fas fa-object-group"></i></div>
+                    <div class="skill-info">
+                        <h4>Canva</h4>
+                        <p>Designing layouts, digital posters, and visual branding elements.</p>
+                        <span style="font-size: 11px; color: var(--accent); font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">✦ Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-col" style="border:none;">
+                    <div class="skill-icon"><i class="fas fa-pencil-alt"></i></div>
+                    <div class="skill-info">
+                        <h4>MediBang Paint</h4>
+                        <p>Crafting detailed digital artworks and hand-drawn illustrations.</p>
+                        <span style="font-size: 11px; color: var(--accent); font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">✦ Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Grid (About + Projects) -->
+            <div class="bottom-grid" style="margin-top: 20px;">
+                
+                <!-- About Me Panel -->
+                <div class="glass-panel about-panel">
+                    <div class="about-label">- A LITTLE BIT ABOUT ME -</div>
+                    <h3 class="about-quote">I'm a mix of dreams, coffee, late nights and big ideas.</h3>
+                    <img src="assets/images/my_new_photo.jpg.png" alt="Profile" class="about-image">
+                    <p class="about-text">
+                        I believe in creating with heart and living with intention. When I'm not designing or coding, you'll find me exploring digital aesthetics, learning new frameworks, or chasing the sunset.
+                    </p>
+                    <a href="#about"><button class="btn-secondary">Read My Story &rarr;</button></a>
+                </div>
+
+                <!-- Featured Projects Panel -->
+                <div class="glass-panel projects-panel">
+                    <div class="projects-header">
+                        <h3>Featured Projects</h3>
+                        <a href="#projects">View All &rarr;</a>
+                    </div>
+                    <div class="project-cards">
+                        <!-- Featured Project 1 -->
+                        <a href="#project-1" style="text-decoration: none;">
+                            <div class="project-card">
+                                <img src="assets/images/thumbnail project 1.jpg" alt="Graphic Design" class="project-img">
+                                <h4 class="project-title">Graphic Design</h4>
+                                <p class="project-sub">Posters & Visuals</p>
+                                <div class="project-card-bottom">
+                                    <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Featured Project 2 -->
+                        <a href="#project-2" style="text-decoration: none;">
+                            <div class="project-card">
+                                <img src="assets/images/thumbnail project 2 (2).jpg" alt="Drawing" class="project-img">
+                                <h4 class="project-title">Drawing</h4>
+                                <p class="project-sub">Digital & Hand-drawn Art</p>
+                                <div class="project-card-bottom">
+                                    <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Featured Project 3 -->
+                        <a href="#project-3" style="text-decoration: none;">
+                            <div class="project-card">
+                                <img src="assets/images/thumbnail project 3 (2).jpg" alt="Video & Audio" class="project-img">
+                                <h4 class="project-title">Video & Audio</h4>
+                                <p class="project-sub">Editing & Multimedia</p>
+                                <div class="project-card-bottom">
+                                    <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <h1 style="font-size: 40px; margin-bottom: 20px;">About <span style="color: var(--accent);">Me</span> ✦</h1>
+                <div style="display: flex; gap: 40px; align-items: flex-start;">
+                    <img src="assets/images/profile.jpg" alt="Profile" style="width: 300px; border-radius: 20px; border: 1px solid var(--glass-border-bright);">
+                    <div style="color: var(--text-secondary); line-height: 1.8;">
+                        <p style="margin-bottom: 15px;">I am a Computer Science student at Universiti Teknikal Malaysia Melaka (UTeM) with a deep passion for the creative arts, particularly graphic design. While my academic studies provide me with a strong technical foundation, my true enthusiasm lies in visual storytelling. I absolutely love drawing and producing digital illustrations, and I spend much of my time editing and creating multimedia videos. I am constantly exploring new ways to blend my technical knowledge with my creative hobbies to craft aesthetic, engaging, and highly visual digital content.</p>
+                        <h3 style="color: var(--text-primary); font-family: var(--body-font); margin-top: 30px; margin-bottom: 10px;">Personal Details</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                            <li><strong style="color: var(--accent);">Name:</strong> Muhammad Ariff Aiman Bin Azhar</li>
+                            <li><strong style="color: var(--accent);">Preferred Name:</strong> Bob / Bobby</li>
+                            <li><strong style="color: var(--accent);">University:</strong> UTeM</li>
+                            <li><strong style="color: var(--accent);">Major:</strong> Computer Science</li>
+                            <li><strong style="color: var(--accent);">Location:</strong> Malaysia</li>
+                        </ul>
+
+                        <h3 style="color: var(--text-primary); font-family: var(--body-font); margin-top: 30px; margin-bottom: 15px;">My Skills</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">Graphic Design</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">Video Editing</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">Illustration</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">UI/UX Design</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">Web Development</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">Canva</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">CapCut</span>
+                            <span style="background: rgba(255,255,255,0.1); border: 1px solid var(--glass-border); padding: 8px 18px; border-radius: 20px; font-size: 12px; color: var(--text-primary); transition: 0.3s; cursor: default;" onmouseover="this.style.background='var(--accent)'; this.style.color='#1a0033'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='var(--text-primary)'">DaVinci Resolve</span>
+                        </div>
+                        
+                        <div style="margin-top: 40px;">
+                            <a href="assets/Resume_Bobby.pdf" target="_blank" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+                                <i class="fas fa-file-download"></i> Download CV / Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <h1 style="font-size: 40px; margin-bottom: 20px;">My <span style="color: var(--accent);">Projects</span> ✦</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">A deeper dive into the systems and prototypes I've built.</p>
+                <div class="project-cards" style="grid-template-columns: repeat(3, 1fr);">
+                    <!-- Project 1 -->
+                    <a href="#project-1" class="project-card-link">
+                        <div class="project-card">
+                            <img src="assets/images/thumbnail project 1.jpg" alt="Graphic Design" class="project-img" style="height: 200px;">
+                            <h4 class="project-title">Graphic Design</h4>
+                            <p class="project-sub">Canva, Infinity, Illustrator, Photoshop</p>
+                            <p style="font-size: 11px; color: var(--text-secondary); margin-top: 10px;">Designing and creating digital graphics and posters.</p>
+                        </div>
+                    </a>
+                    <!-- Project 2 -->
+                    <a href="#project-2" class="project-card-link">
+                        <div class="project-card">
+                            <img src="assets/images/thumbnail project 2 (2).jpg" alt="Drawing" class="project-img" style="height: 200px;">
+                            <h4 class="project-title">Drawing</h4>
+                            <p class="project-sub">MediBang Paint, Hand-drawn</p>
+                            <p style="font-size: 11px; color: var(--text-secondary); margin-top: 10px;">Artworks created during my diploma to practice and refine my drawing skills.</p>
+                        </div>
+                    </a>
+                    <!-- Project 3 -->
+                    <a href="#project-3" class="project-card-link">
+                        <div class="project-card">
+                            <img src="assets/images/thumbnail project 3 (2).jpg" alt="Video & Audio Editing" class="project-img" style="height: 200px;">
+                            <h4 class="project-title">Video & Audio Editing</h4>
+                            <p class="project-sub">CapCut, After Effects, Premiere, DaVinci</p>
+                            <p style="font-size: 11px; color: var(--text-secondary); margin-top: 10px;">Specializing in voice-over work, short-form content, and comprehensive video editing.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUALITIES SECTION -->
+        <section id="qualities" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <h1 style="font-size: 40px; margin-bottom: 10px;">My <span style="color: var(--accent);">Qualities</span> ✦</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">Core strengths and professional traits that drive my work.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-lightbulb" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Creative Problem Solving</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Approaching challenges with innovative, out-of-the-box thinking to find elegant design and technical solutions.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-sync-alt" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Highly Adaptable</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">A fast learner who quickly adjusts to new tools, software updates, and shifting project requirements.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-users" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Team Collaboration</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Strong communication skills, thriving in group projects and synergizing effectively with other creatives and developers.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-search" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Attention to Detail</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Meticulous approach to design and coding, ensuring pixel-perfect layouts and high-quality final deliverables.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-brain" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Creative Thinking</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Constantly brainstorming fresh concepts and unique visual styles to make projects truly stand out from the crowd.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-clock" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Time Management</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Efficiently balancing multiple deadlines and prioritizing tasks to consistently deliver high-quality work on schedule.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-book-open" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">Continuous Learning</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Always exploring new software, design trends, and coding frameworks to keep my skill set modern and relevant.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid var(--glass-border); transition: 0.3s; cursor: default;" onmouseover="this.style.borderColor='var(--accent)'; this.style.transform='translateY(-5px)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.05)';">
+                        <i class="fas fa-user-check" style="font-size: 30px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary); margin-bottom: 10px;">User-Centric Focus</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Prioritizing the end-user's experience by creating interfaces and designs that are both beautiful and intuitive.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <h1 style="font-size: 40px; margin-bottom: 20px;">My <span style="color: var(--accent);">Education</span> ✦</h1>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- UTeM -->
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 4px solid var(--accent); display: flex; gap: 20px; align-items: flex-start;">
+                        <img src="assets/images/utem_logo (2).png" alt="UTeM Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--glass-border-bright); flex-shrink: 0;">
+                        <div style="flex: 1;">
+                            <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary);">Universiti Teknikal Malaysia Melaka (UTeM)</h3>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <p style="color: var(--accent); font-size: 14px; margin: 0; font-weight: 600;">Bachelor of Computer Science</p>
+                                <span style="color: var(--text-secondary); font-size: 12px; font-weight: bold;">2024 - Current</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                                Currently pursuing my degree with a focus on interactive applications, interface design, and software system development. Active in various academic projects involving Human-Computer Interaction and UI/UX design principles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- KPTM -->
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 4px solid var(--accent); display: flex; gap: 20px; align-items: flex-start;">
+                        <img src="assets/images/kptm_logo.jpg" alt="KPTM Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--glass-border-bright); flex-shrink: 0;">
+                        <div style="flex: 1;">
+                            <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary);">Kolej Poly-Tech MARA (KPTM)</h3>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <p style="color: var(--accent); font-size: 14px; margin: 0; font-weight: 600;">Student</p>
+                                <span style="color: var(--text-secondary); font-size: 12px; font-weight: bold;">Nov 2020 - 2023</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                                This is where I studied for 2 and a half years to find out what adulthood is and teach me how to live in adulthood and a lot of knowledge is also gained.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SMK Indera Mahkota -->
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 4px solid var(--accent); display: flex; gap: 20px; align-items: flex-start;">
+                        <img src="assets/images/smk_logo.jpg" alt="SMK Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--glass-border-bright); flex-shrink: 0;">
+                        <div style="flex: 1;">
+                            <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary);">SMK Indera Mahkota</h3>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <p style="color: var(--accent); font-size: 14px; margin: 0; font-weight: 600;">Student</p>
+                                <span style="color: var(--text-secondary); font-size: 12px; font-weight: bold;">2015 - 2019</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                                This is where I studied for 5 years which taught me the importance of the future and the beginning of adolescence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SKKP -->
+                    <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 4px solid var(--accent); display: flex; gap: 20px; align-items: flex-start;">
+                        <img src="assets/images/skkp_logo.jpg" alt="SKKP Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--glass-border-bright); flex-shrink: 0;">
+                        <div style="flex: 1;">
+                            <h3 style="font-family: var(--body-font); font-size: 20px; color: var(--text-primary);">Sekolah Kebangsaan Kampong Padang (SKKP)</h3>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <p style="color: var(--accent); font-size: 14px; margin: 0; font-weight: 600;">Schooler</p>
+                                <span style="color: var(--text-secondary); font-size: 12px; font-weight: bold;">2009 - 2014</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                                This is the beginning of the point of my life where I studied for 6 years that taught me what it means to be friends, teachers and school even though UPSR twice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <h1 style="font-size: 40px; margin-bottom: 10px;">Photo <span style="color: var(--accent);">Gallery</span> ✦</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">A collection of captured moments and adventures new hobby</p>
+                
+                <div class="gallery-grid">
+                    <img src="assets/images/gallery1.jpg.jpg" alt="Gallery 1" class="gallery-img" data-caption="This picture when I do outing at Terengganu">
+                    <img src="assets/images/gallery 2.jpg.jpg" alt="Gallery 2" class="gallery-img" data-caption="This picture when I do outing at Terengganu">
+                    <img src="assets/images/gallery 3.jpg.jpg" alt="Gallery 3" class="gallery-img" data-caption="This picture when I do outing at Terengganu">
+                    <img src="assets/images/gallery 4.jpg.jpg" alt="Gallery 4" class="gallery-img" data-caption="This picture when I do outing at Terengganu">
+                    <img src="assets/images/gallery 5.jpg.jpg" alt="Gallery 5" class="gallery-img" data-caption="This picture taken during Sukan Antara Fakulti at that time I playing role media for FICTS.">
+                    <img src="assets/images/gallery 6.jpg.jpg" alt="Gallery 6" class="gallery-img" data-caption="This picture taken during Sukan Antara Fakulti at that time I playing role media for FICTS.">
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="view-section">
+            <div class="glass-panel" style="padding: 50px; text-align: center;">
+                <h1 style="font-size: 40px; margin-bottom: 20px;">Get in <span style="color: var(--accent);">Touch</span> ✦</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">Let's collaborate on your next big idea!</p>
+                
+                <form class="contact-form" id="mainContactForm">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    <input type="text" id="contactSubject" placeholder="Subject" required>
+                    <textarea id="contactMessage" placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="btn-submit">Send Transmission &rarr;</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- PROJECT 1 DETAILS -->
+        <section id="project-1" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <a href="#projects" class="back-btn">&larr; Back to Projects</a>
+                <h1 style="font-size: 40px; margin-bottom: 10px;">Graphic <span style="color: var(--accent);">Design</span> ✦</h1>
+                <p style="color: var(--text-secondary); font-size: 18px; margin-bottom: 30px;">Canva, Infinity, Illustrator, Photoshop</p>
+                <div style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                    <p style="line-height: 1.8;">Designing and creating digital graphics and posters. This project showcases my ability to blend typography, color theory, and visual hierarchy to create compelling visual narratives. Using a mix of industry-standard tools like Adobe Illustrator and Photoshop, alongside accessible platforms like Canva, I have produced a wide variety of promotional materials, branding assets, and event posters.</p>
+                </div>
+                <h3 style="margin-bottom: 20px;">Project Screenshots</h3>
+                <div class="gallery-grid">
+                    <img src="assets/images/graphic_design_1.jpg.png" alt="Graphic Design Preview 1" class="gallery-img">
+                    <img src="assets/images/graphic_design_2.jpg.png" alt="Graphic Design Preview 2" class="gallery-img">
+                    <img src="assets/images/graphic_design_3.jpg.png" alt="Graphic Design Preview 3" class="gallery-img">
+                    <img src="assets/images/graphic_design_4.jpg.jpg" alt="Graphic Design Preview 4" class="gallery-img">
+                    <img src="assets/images/graphic_design_5.jpg.jpg" alt="Graphic Design Preview 5" class="gallery-img">
+                    <img src="assets/images/graphic_design_6.jpg (2).jpg" alt="Graphic Design Preview 6" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT 2 DETAILS -->
+        <section id="project-2" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <a href="#projects" class="back-btn">&larr; Back to Projects</a>
+                <h1 style="font-size: 40px; margin-bottom: 10px;">Illustration & <span style="color: var(--accent);">Drawing</span> ✦</h1>
+                <p style="color: var(--text-secondary); font-size: 18px; margin-bottom: 30px;">MediBang Paint & Hand-drawn</p>
+                <div style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                    <p style="line-height: 1.8;">A collection of artworks created during my diploma. This project focuses on practicing and refining my illustration skills, experimenting with both digital tools like MediBang Paint and traditional hand-drawn techniques. It showcases my progress in understanding anatomy, shading, and character design.</p>
+                </div>
+                <h3 style="margin-bottom: 20px;">Project Screenshots</h3>
+                <div class="gallery-grid">
+                    <img src="assets/images/drawing_1.jpg.png" alt="Drawing Preview 1" class="gallery-img">
+                    <img src="assets/images/drawing_2.jpg.png" alt="Drawing Preview 2" class="gallery-img">
+                    <img src="assets/images/drawing_3.jpg.jpg" alt="Drawing Preview 3" class="gallery-img">
+                    <img src="assets/images/drawing_4.jpg.jpg" alt="Drawing Preview 4" class="gallery-img">
+                    <img src="assets/images/drawing_5.jpg.jpg" alt="Drawing Preview 5" class="gallery-img">
+                    <img src="assets/images/drawing_6.jpg.jpg" alt="Drawing Preview 6" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT 3 DETAILS -->
+        <!-- PROJECT 3 DETAILS -->
+        <section id="project-3" class="view-section">
+            <div class="glass-panel" style="padding: 50px;">
+                <a href="#projects" class="back-btn">&larr; Back to Projects</a>
+                <h1 style="font-size: 40px; margin-bottom: 10px;">Video & <span style="color: var(--accent);">Audio</span> ✦</h1>
+                <p style="color: var(--text-secondary); font-size: 18px; margin-bottom: 30px;">CapCut, After Effects, Premiere Pro, DaVinci Resolve</p>
+                <div style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                    <p style="line-height: 1.8;">A showcase of my multimedia production skills, specializing in voice-over work, short-form video content, and comprehensive editing. Utilizing an array of professional software—including Adobe After Effects, Premiere Pro, and DaVinci Resolve—I bring static concepts to life through dynamic cuts, audio synchronization, and compelling storytelling.</p>
+                </div>
+                <h3 style="margin-bottom: 20px;">Project Screenshots</h3>
+                <div class="gallery-grid">
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/vtiptVb4LXQ" target="_blank" class="yt-thumbnail" data-yt-id="vtiptVb4LXQ" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/vtiptVb4LXQ/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This is a voice over of me and my friends for the subject Video & Audio.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/aQ0N2NcaggA" target="_blank" class="yt-thumbnail" data-yt-id="aQ0N2NcaggA" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/aQ0N2NcaggA/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This video is about putting audio effects to make the video look good.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/5HI4jp1KfHc" target="_blank" class="yt-thumbnail" data-yt-id="5HI4jp1KfHc" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/5HI4jp1KfHc/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This video is a commercial ad where we created a new product and promoted it.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/N1A6TXnCWHY" target="_blank" class="yt-thumbnail" data-yt-id="N1A6TXnCWHY" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/N1A6TXnCWHY/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This video is a 3D animation where I made a short horror story about an adult who didn't wash his feet or shower after coming home.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/YW_3UVAOVNo" target="_blank" class="yt-thumbnail" data-yt-id="YW_3UVAOVNo" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/YW_3UVAOVNo/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This video is a 3D animation with a romance theme, telling a story about a journey of love.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/zUmwG1F75Q8" target="_blank" class="yt-thumbnail" data-yt-id="zUmwG1F75Q8" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/zUmwG1F75Q8/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This is my intern result where I made a trailer/teaser for an award ceremony.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <a href="https://youtu.be/0VSJItzWAYQ" target="_blank" class="yt-thumbnail" data-yt-id="0VSJItzWAYQ" style="text-decoration: none; position: relative; width: 100%; height: 200px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid var(--glass-border); overflow: hidden; display: flex; align-items: center; justify-content: center; transition: 0.3s;" onmouseover="this.style.borderColor='var(--accent)';" onmouseout="this.style.borderColor='var(--glass-border)';">
+                            <img src="https://img.youtube.com/vi/0VSJItzWAYQ/hqdefault.jpg" alt="Video Thumbnail" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                            <i class="fab fa-youtube" style="font-size: 50px; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); z-index: 1; transition: 0.3s;"></i>
+                        </a>
+                        <p class="video-caption" style="margin-top: 15px;">This is an informative promotional video about living a healthy life without sugar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Banner (Always visible at bottom) -->
+        <div class="glass-panel footer-banner" style="margin-top: 40px;">
+            <div class="footer-text">
+                <h4><i class="fas fa-sparkles" style="font-size: 14px; margin-right: 5px;"></i> Let's create something</h4>
+                <p>beautiful together.</p>
+            </div>
+            <div class="footer-info">
+                <div class="info-block">
+                    <div class="info-icon"><i class="far fa-envelope"></i></div>
+                    <div>
+                        <span style="font-size: 10px; display: block; margin-bottom: 2px;">Email Me</span>
+                        bobbiiyt.2@gmail.com
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <span style="font-size: 10px; display: block; margin-bottom: 2px;">Based In</span>
+                        UTeM, Malaysia
+                    </div>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <span style="font-size: 10px; margin-right: 10px;">Let's Connect</span>
+                <i class="fas fa-heart" style="color: var(--accent); margin-right: 5px;"></i>
+                <a href="https://www.instagram.com/bobbyxart?igsh=MTBycWlpbGU4ZXl0bw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@bobbymakesart?_r=1&_t=ZS-97OVBAHTBFV" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="mailto:bobbiiyt.2@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Scrolling Marquee Text -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="marquee-text">LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ </span>
+                <span class="marquee-text">LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ LET'S WORK TOGETHER ✦ OPEN TO COLLABORATION ✦ AVAILABLE FOR HIRE ✦ </span>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 BOBBY PORTFOLIO. All rights reserved. ✦
+        </div>
+
+    </main>
+
+    <!-- Background Audio Element -->
+    <audio id="bg-audio" loop>
+        <source src="assets/bg_music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script>
+        // Interactive Toggle Scripts
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        themeToggle.addEventListener('click', () => {
+            if (themeIcon.classList.contains('fa-moon')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                themeToggle.style.color = '#ff9900'; // Sun color
+                document.body.classList.add('light-theme');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                themeToggle.style.color = '';
+                document.body.classList.remove('light-theme');
+            }
+        });
+
+        const musicToggle = document.getElementById('music-toggle');
+        const musicIcon = musicToggle.querySelector('i');
+        const bgAudio = document.getElementById('bg-audio');
+        
+        musicToggle.addEventListener('click', () => {
+            if (musicIcon.classList.contains('fa-volume-mute')) {
+                // Currently muted, play music
+                bgAudio.play().catch(e => console.log("Audio play failed:", e));
+                musicIcon.classList.remove('fa-volume-mute');
+                musicIcon.classList.add('fa-music');
+                musicToggle.style.color = '';
+            } else {
+                // Currently playing, pause music
+                bgAudio.pause();
+                musicIcon.classList.remove('fa-music');
+                musicIcon.classList.add('fa-volume-mute');
+                musicToggle.style.color = '#ff4d4d'; // Red to indicate muted
+            }
+        });
+    </script>
+</body>
+    <!-- Video Intro Modal -->
+    <div id="videoModal" class="image-modal">
+        <span class="close-modal" id="closeVideoModal">&times;</span>
+        <div class="modal-content" style="background: transparent; width: 80%; max-width: 1000px; height: 80%; max-height: 600px; display: flex; align-items: center; justify-content: center; box-shadow: none;">
+            <video id="introVideo" width="100%" height="100%" controls style="border-radius: 15px; box-shadow: 0 10px 50px rgba(0,0,0,0.5); object-fit: contain; background: #000;">
+                <source src="assets/videos/video_8.mp4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <span class="prev-modal" id="prevModal">&#10094;</span>
+        <span class="next-modal" id="nextModal">&#10095;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+
+    <script src="js/script.js?v=8"></script>
+</body>
+</html>
